@@ -1,6 +1,6 @@
 # desktop-assistant
 
-A super lightweight desktop assistant (not a coworker) which works with an embedding model based router (for decision making), lowwi (wake word detection) and whisper (for STT)
+A super lightweight desktop assistant (not a coworker) which works with an **embedding model based router** (for decision making), **lowwi** (wake word detection) and **whisper.cpp** (for STT)
 
 ## Specs
 
