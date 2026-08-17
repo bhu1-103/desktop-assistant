@@ -1,0 +1,3 @@
+[submodule "external/lowwi"]
+	path = external/lowwi
+	url = https://github.com/CLFML/lowwi.git
