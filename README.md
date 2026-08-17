@@ -11,8 +11,23 @@ A super lightweight desktop assistant which works with an embedding model based 
 
 ## how to build
 
-- clone the repo -> `git clone --recurse-submodules https://github.com/bhu1-103/desktop-assistant.git`
-- move into the directory -> `cd desktop-assistant`
-- download the required models -> `./scripts/download-models.sh`
-- run the build command -> `./scripts/build.sh`
-- run the program -> `./build/friday`
+- clone the repo
+```bash
+git clone --recurse-submodules https://github.com/bhu1-103/desktop-assistant.git
+```
+- move into the directory
+```bash
+cd desktop-assistant
+```
+- download the required models
+```bash
+./scripts/download-models.sh
+```
+- run the build command
+```bash
+./scripts/build.sh
+```
+- run the program
+```bash
+./build/friday
+```
