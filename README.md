@@ -23,7 +23,7 @@ git clone --recurse-submodules https://github.com/bhu1-103/desktop-assistant.git
 ```bash
 cd desktop-assistant
 ```
-- download the required models
+- download the required models for lowwi, whisper and lua
 ```bash
 ./scripts/download-models.sh
 ```
