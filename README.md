@@ -57,3 +57,18 @@ sh ./models/download-ggml-model.sh tiny.en-q5_1
 - run a demo to make sure it is working
 ```bash
 ./whisper.cpp/build/bin/whisper-cli -m ./whisper.cpp/models/ggml-tiny.en-q5_1.bin -f ./whisper.cpp/samples/jfk.wav
+cd ..
+```
+
+### Router Engine -> Arctic Embed using Lua
+- install LuaJIT from [here](https://luajit.org/luajit.html)
+- install required packages using LuaRocks and set path temporarily
+```bash
+luarocks --lua-version=5.1 --local install lua-cjson
+luarocks --lua-version=5.1 --local install luafilesystem
+eval "$(luarocks --lua-version=5.1 --local path)"
+```
+- run the inference
+```bash
+luajit music.lua "play music"
+```
