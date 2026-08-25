@@ -36,7 +36,7 @@ if r.accepted and r.intent then
 	if r.intent == "PLAY_MUSIC" then
 		os.execute("playerctl play")
 		os.execute("pactl set-sink-mute @DEFAULT_SINK@ false")
-		os.execute("pactl set-sink-volume @DEFAULT_SINK@ 30%")
+		-- os.execute("pactl set-sink-volume @DEFAULT_SINK@ 30%")
 	end
 	if r.intent == "PAUSE_MUSIC" then
 		os.execute("playerctl pause")
