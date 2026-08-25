@@ -38,8 +38,8 @@
 
 constexpr int SAMPLE_RATE = 16000;
 constexpr int COMMAND_CHUNK_MS = 500;
-constexpr int MIN_RECORDING_MS = 500;
-constexpr int SILENCE_CHUNKS = 3;
+constexpr int MIN_RECORDING_MS = 1000;
+constexpr int SILENCE_CHUNKS = 4;
 constexpr int MAX_COMMAND_MS = 5000;
 constexpr int REARM_MS = 2000;
 constexpr float SILENCE_THRESHOLD = 0.015f;
@@ -180,7 +180,8 @@ int main() {
 
     auto params = whisper_context_default_params();
     auto* ctx = whisper_init_from_file_with_params(
-        "models/ggml-tiny.en-q5_1.bin", params);
+        //"models/ggml-tiny.en-q5_1.bin", params);
+        "models/ggml-small.en-q5_1.bin", params);
 
     if (!ctx) {
         std::cerr << "Failed to initialize whisper context\n";
