@@ -54,6 +54,10 @@ cmake -B build && cmake --build build -j --config Release
 ```bash
 sh ./models/download-ggml-model.sh tiny.en-q5_1
 ```
+or
+```bash
+wget -P models/ https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.en-q5_1.bin
+```
 - run a demo to make sure it is working
 ```bash
 ./whisper.cpp/build/bin/whisper-cli -m ./whisper.cpp/models/ggml-tiny.en-q5_1.bin -f ./whisper.cpp/samples/jfk.wav
