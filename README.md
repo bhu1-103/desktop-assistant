@@ -13,6 +13,17 @@ A super lightweight desktop assistant (not a coworker) which works with an **emb
 
 ## How to build
 
+### Quick Way
+
+- clone the repo
+```bash
+git clone --recurse-submodules https://github.com/bhu1-103/desktop-assistant.git
+cd desktop-assistant
+./scripts/download-models.sh
+./scripts/build.sh
+./build/friday
+```
+
 ### Wake Word -> LOWWI
 
 - clone the repo
