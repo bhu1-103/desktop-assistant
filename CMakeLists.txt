@@ -15,6 +15,13 @@ set(CLFML_LOWWI_BUILD_EXAMPLE_PROJECTS OFF CACHE BOOL "" FORCE)
 # Build LOWWI from the git submodule, no more repo bloat...
 add_subdirectory(external/lowwi)
 
+# Prevent whisper.cpp from building its server, tests, and examples (no repo bloat!)
+set(WHISPER_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(WHISPER_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(WHISPER_BUILD_SERVER OFF CACHE BOOL "" FORCE)
+# Build whisper.cpp from the git submodule
+add_subdirectory(external/whisper.cpp)
+
 # SDL2 for audio_async.
 find_package(SDL2 REQUIRED)
 
@@ -31,5 +38,6 @@ target_include_directories(friday PRIVATE
 
 target_link_libraries(friday PRIVATE
     CLFML::lowwi
+    whisper
     ${SDL2_LIBRARIES}
 )
