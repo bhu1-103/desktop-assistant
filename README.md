@@ -2,6 +2,8 @@
 
 A super lightweight desktop assistant (not a coworker) which works with an **embedding model based router** (for decision making), **lowwi** (wake word detection) and **whisper.cpp** (for STT)
 
+it is very messy, i need to find a better way to do all this...
+
 ## Specs
 
 - C++ based
