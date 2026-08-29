@@ -4,6 +4,8 @@ A super lightweight desktop assistant (not a coworker) which works with an **emb
 
 it is very messy, i need to find a better way to do all this...
 
+maybe, introduce rag (a tiny rag engine with a kiwix database) and make it smarter
+
 ## Specs
 
 - C++ based
